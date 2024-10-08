@@ -23,13 +23,16 @@ This project is a DFA simulator for Theoretical Foundations of Computer Science 
 ## Running the Program
 
 1. Make sure that you have a file called DFA.txt in the src folder. The file should follow this format:
-   Line 1: Number of states (integer).
-   Line 2: Space-separated list of accepting state numbers.
-   Line 3: Space-separated list of alphabet symbols.
-   Lines 4+: Transition table, one line per state, listing next states for each symbol.
+   - Line 1: Number of states (integer).
+   - Line 2: Space-separated list of accepting state numbers.
+   - Line 3: Space-separated list of alphabet symbols.
+   - Lines 4+: Transition table, one line per state, listing next states for each symbol.
 
-2. Run the dfa_simulator.py script:
-   python3 dfa_simulator.py
+2. cd into the projects src folder:
+   - cd <path>
 
-3. Enter a string to evaluate when prompted, or type Quit to exit.
+3. Run the dfa_simulator.py script:
+   - python3 dfa_simulator.py
+
+4. Enter a string to evaluate when prompted, or type Quit to exit.
 
