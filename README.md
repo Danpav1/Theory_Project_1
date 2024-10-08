@@ -22,7 +22,7 @@ This project is a DFA simulator for Theoretical Foundations of Computer Science 
 
 ## Running the Program
 
-1. Make sure that you have a file called DFA.txt in the same directory as the program. The file should follow this format:
+1. Make sure that you have a file called DFA.txt in the src folder. The file should follow this format:
    Line 1: Number of states (integer).
    Line 2: Space-separated list of accepting state numbers.
    Line 3: Space-separated list of alphabet symbols.
