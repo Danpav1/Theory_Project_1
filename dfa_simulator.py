@@ -1,8 +1,9 @@
 """
-dfa_simulator.py
-Daniel Pavenko
-This program simulates / computes our DFA using the data from our dfa_reader and the states of our
-dfa_state class.
+  dfa_simulator.py
+  Daniel Pavenko
+
+  This program simulates / computes our DFA using the data from our dfa_reader and the states of our
+  dfa_state class.
 """
 from dfa_reader import read_dfa
 from dfa_state import dfa_state

@@ -1,6 +1,7 @@
 """
   dfa_reader.py
   Daniel Pavenko
+  
   This program reads in "DFA.txt", which should be in the projects directory, and sets the files data as
   vars
 """

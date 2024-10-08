@@ -1,6 +1,7 @@
 """
   dfa_state.py
   Daniel Pavenko
+  
   This program is a class that houses our dfa_state object, it is used when we simulate and compute or DFA
 """
 class dfa_state:
