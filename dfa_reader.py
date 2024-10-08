@@ -20,10 +20,3 @@ def read_dfa():
             transitions.append(list(map(int, file.readline().strip().split())))
 
     return num_states, accepting_states, alphabet, transitions
-
-# Testing
-#num_states, accepting_states, alphabet, transitions = read_dfa()
-#print(f"Number of states: {num_states}")
-#print(f"Accepting states: {accepting_states}")
-#print(f"Alphabet: {alphabet}")
-#print(f"Transitions: {transitions}")

@@ -57,7 +57,7 @@ def simulate_dfa(states, alphabet, input_string):
 
 # Main method to initialize the DFA, prompt for input and simulate the DFA
 def main():
-    print(">>>Loading DFA.txt…")
+    print(">>> Loading DFA.txt…")
     
     # Read DFA configuration from "DFA.txt"
     num_states, accepting_states, alphabet, transitions = read_dfa()
