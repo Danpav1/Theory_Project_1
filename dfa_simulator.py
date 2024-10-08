@@ -9,10 +9,12 @@ from dfa_reader import read_dfa
 from dfa_state import dfa_state
 
 # Constants
-START_STATE = 0
+START_STATE = 0 # The start state num
 
 # simulate_dfa
+#
 # Function that simulates / computes the given DFA
+#
 # param states: List of dfa_state objects representing the DFA's states
 # param alphabet: The DFA's alphabet (list of characters)
 # param input_string: The string to evaluate
@@ -33,7 +35,7 @@ def simulate_dfa(states, alphabet, input_string):
             break
 
         current_state = next_state
-        # Essentially remove the first char since we already processed it
+        # Essentially remove the first char since we've already processed it
         input_string = input_string[1:]
 
         # If there are still chars in our input string
@@ -52,20 +54,22 @@ def simulate_dfa(states, alphabet, input_string):
 
         # Final state check
         if states[current_state].is_accepting:
-            print("ACCEPTED")
+            print("ACCEPTED") 
         else:
             print("REJECTED")
 
-# Main method to initialize the DFA, prompt for input and simulate the DFA
+# main()
+#
+# Main method to initialize the DFA, prompt user for input and simulate the DFA
 def main():
     print(">>> Loading DFA.txt…")
     
     # Read DFA configuration from "DFA.txt"
-    num_states, accepting_states, alphabet, transitions = read_dfa()
+    num_of_states, accepting_states, alphabet, transitions = read_dfa()
 
     # Create DFA states, marking the start and accepting states
     states = []
-    for state_num in range(num_states):
+    for state_num in range(num_of_states):
         is_accepting = state_num in accepting_states # True if state is in our accepting states list
         is_start = (state_num == START_STATE)  # State 0 is always our start state
         # Create a state filled with relevant data gathered
@@ -82,6 +86,6 @@ def main():
           # Simulate the DFA for the given input string
           simulate_dfa(states, alphabet, input_string)
 
-# Entry point, prevents main() from running automatically
+# Entry point, prevents main() from running automatically if imported
 if __name__ == "__main__":
     main()
