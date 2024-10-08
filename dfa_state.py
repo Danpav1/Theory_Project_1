@@ -3,7 +3,7 @@
   Daniel Pavenko
   This program is a class that houses our dfa_state object, it is used when we simulate and compute or DFA
 """
-class DFANode:
+class dfa_state:
   
     # __init__
     # This is our constructor, it initializes a dfa_state with the params as instance variables
