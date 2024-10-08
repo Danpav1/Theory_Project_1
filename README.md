@@ -29,10 +29,10 @@ This project is a DFA simulator for Theoretical Foundations of Computer Science 
    - Lines 4+: Transition table, one line per state, listing next states for each symbol.
 
 2. cd into the projects src folder:
-   ###### cd <path>
+   ### cd path/to/src
 
 3. Run the dfa_simulator.py script:
-   ###### python3 dfa_simulator.py
+   ### python3 dfa_simulator.py
 
 4. Enter a string to evaluate when prompted, or type Quit to exit.
 
